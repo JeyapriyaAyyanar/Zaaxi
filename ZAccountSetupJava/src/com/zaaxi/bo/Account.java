@@ -2,7 +2,7 @@ package com.zaaxi.bo;
 
 public class Account {
 	
-	private String accountNumber;
+	private String accountNumber; 
 
 	public String getAccountNumber() {
 		return accountNumber;
