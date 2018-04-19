@@ -4,7 +4,7 @@ public class Account {
 
 	private String accountNumber;
 	
-	private String accountName;
+	private String accountName; 
 
 	public String getAccountNumber() {
 		return accountNumber;
