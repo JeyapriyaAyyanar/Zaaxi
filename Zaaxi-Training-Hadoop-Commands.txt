@@ -1,0 +1,41 @@
+Hadoop File System Shell Commands
+
+1) appendToFile
+	To append single or multiple sources from local file system to destination file system.
+	Syntax : hadoop fs -appendToFile <localsrc> ... <dst>
+
+2) cat
+	See the contents of a file.
+	Syntax : hadoop fs -cat <path[filename]>
+
+3) cp
+	Copy a file from source to destination. Can also be used to copy multiple sources in which case the destination must be a directory.
+	Syntax : hadoop fs -cp <source> <dest>
+
+4) copyFromLocal
+	Copy a file from local file system to hdfs. 
+	Syntax : hadoop fs -copyFromLocal <localsrc> URI
+
+5) mkdir
+	Create a directory in hdfs.
+	Syntax : hadoop fs -mkdir <paths>
+
+6) ls
+	List the contents of a directory.
+	Syntax : hadoop fs -ls <path>
+
+7) createSnapshot
+	Create a snapshot of a snapshottable directory.
+	Syntax : hdfs dfs -createSnapshot <path> [<snapshotName>]
+
+8) deleteSnapshot
+	Delete a snapshot of a snapshottable directory.
+	Syntax : hdfs dfs -deleteSnapshot <path> [<snapshotName>]
+
+9) allowSnapshot
+	Admin command to make a directory snapshottable.
+	Syntax : hdfs dfsadmin -allowSnapshot <path>
+
+10) disallowSnapshot
+	Admin command to disallow snapshots of a directory.
+	Syntax : hdfs dfsadmin -disallowSnapshot <path>
